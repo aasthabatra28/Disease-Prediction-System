@@ -45,22 +45,22 @@ if selected == 'Diabetes Prediction':
         Pregnancies = st.text_input('Number of Pregnancies', placeholder='Normal: 0–10 times')
       
     with col2:
-        Glucose = st.text_input('Glucose Level')
+        Glucose = st.text_input('Glucose Level (mg/dL)', placeholder='Normal: 70–140 mg/dL (after meals)')
 
     with col3:
-        BloodPressure = st.text_input('Blood Pressure value')
-
+        BloodPressure = st.text_input('Blood Pressure (mm Hg)', placeholder='Normal: 80–120 mm Hg')
+      
     with col1:
-        SkinThickness = st.text_input('Skin Thickness value')
+        SkinThickness = st.text_input('Skin Thickness (mm)', placeholder='Normal: 10–50 mm')
 
     with col2:
-        Insulin = st.text_input('Insulin Level')
+        Insulin = st.text_input('Insulin Level (µU/mL)', placeholder='Normal: 16–166 µU/mL')
 
     with col3:
-        BMI = st.text_input('BMI value')
+        BMI = st.text_input('BMI value', placeholder='Normal: 18.5–24.9')
 
     with col1:
-        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value', placeholder='Normal: 0.0–1.0 (lower = better)')
 
     with col2:
         Age = st.text_input('Age of the Person')
@@ -248,6 +248,7 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+
 
 
 
