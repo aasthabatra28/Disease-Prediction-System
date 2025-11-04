@@ -156,70 +156,71 @@ if selected == "Parkinsons Prediction":
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        fo = st.text_input('MDVP:Fo(Hz)')
+        fo = st.text_input('MDVP:Fo(Hz) - Average Fundamental Frequency (Pitch)')
 
     with col2:
-        fhi = st.text_input('MDVP:Fhi(Hz)')
+        fhi = st.text_input('MDVP:Fhi(Hz) - Maximum Fundamental Frequency')
 
     with col3:
-        flo = st.text_input('MDVP:Flo(Hz)')
+        flo = st.text_input('MDVP:Flo(Hz) - Minimum Fundamental Frequency')
 
     with col4:
-        Jitter_percent = st.text_input('MDVP:Jitter(%)')
+        Jitter_percent = st.text_input('MDVP:Jitter(%) - Variation in Frequency (%)')
 
     with col5:
-        Jitter_Abs = st.text_input('MDVP:Jitter(Abs)')
+        Jitter_Abs = st.text_input('MDVP:Jitter(Abs) - Absolute Jitter (Hz)')
 
     with col1:
-        RAP = st.text_input('MDVP:RAP')
+        RAP = st.text_input('MDVP:RAP - Relative Average Perturbation')
 
     with col2:
-        PPQ = st.text_input('MDVP:PPQ')
+        PPQ = st.text_input('MDVP:PPQ - Pitch Period Perturbation Quotient')
 
     with col3:
-        DDP = st.text_input('Jitter:DDP')
+        DDP = st.text_input('Jitter:DDP - Average Absolute Difference of Differences between Cycles')
 
     with col4:
-        Shimmer = st.text_input('MDVP:Shimmer')
+        Shimmer = st.text_input('MDVP:Shimmer - Variation in Amplitude')
 
     with col5:
-        Shimmer_dB = st.text_input('MDVP:Shimmer(dB)')
+        Shimmer_dB = st.text_input('MDVP:Shimmer(dB) - Shimmer in decibels')
 
     with col1:
-        APQ3 = st.text_input('Shimmer:APQ3')
+        APQ3 = st.text_input('Shimmer:APQ3 - 3-point Amplitude Perturbation Quotient')
 
     with col2:
-        APQ5 = st.text_input('Shimmer:APQ5')
+        APQ5 = st.text_input('Shimmer:APQ5 - 5-point Amplitude Perturbation Quotient')
 
     with col3:
-        APQ = st.text_input('MDVP:APQ')
+        APQ = st.text_input('MDVP:APQ - Average Amplitude Perturbation Quotient')
 
     with col4:
-        DDA = st.text_input('Shimmer:DDA')
+        DDA = st.text_input('Shimmer:DDA - Average Absolute Difference of Differences in Amplitude')
 
     with col5:
-        NHR = st.text_input('NHR')
+        NHR = st.text_input('NHR - Noise-to-Harmonics Ratio (voice clarity)')
 
     with col1:
-        HNR = st.text_input('HNR')
+        HNR = st.text_input('HNR - Harmonics-to-Noise Ratio (signal quality)')
 
     with col2:
-        RPDE = st.text_input('RPDE')
+        RPDE = st.text_input('RPDE - Recurrence Period Density Entropy (nonlinear measure of complexity)')
 
     with col3:
-        DFA = st.text_input('DFA')
+        DFA = st.text_input('DFA - Detrended Fluctuation Analysis (signal fractal scaling)')
 
     with col4:
-        spread1 = st.text_input('spread1')
+        spread1 = st.text_input('Spread1 - Frequency Variation Measure 1')
 
     with col5:
-        spread2 = st.text_input('spread2')
+        spread2 = st.text_input('Spread2 - Frequency Variation Measure 2')
 
     with col1:
-        D2 = st.text_input('D2')
+        D2 = st.text_input('D2 - Correlation Dimension (signal complexity)')
 
     with col2:
-        PPE = st.text_input('PPE')
+        PPE = st.text_input('PPE - Pitch Period Entropy (irregularity of pitch)')
+
 
     # code for Prediction
     parkinsons_diagnosis = ''
@@ -241,6 +242,7 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+
 
 
 
