@@ -97,42 +97,35 @@ if selected == 'Heart Disease Prediction':
 
     with col1:
         age = st.text_input('Age')
-
     with col2:
-        sex = st.text_input('Sex')
-
+        sex = st.text_input('Sex (1=Male, 0=Female)')
     with col3:
-        cp = st.text_input('Chest Pain types')
+        cp = st.text_input('Chest Pain Type (0–3)', placeholder='0: Typical Angina, 1–3: Varying severity')
 
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
-
+        trestbps = st.text_input('Resting Blood Pressure (mm Hg)', placeholder='Normal: 90–120 mm Hg')
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
-
+        chol = st.text_input('Serum Cholesterol (mg/dL)', placeholder='Normal: <200 mg/dL')
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
+        fbs = st.text_input('Fasting Blood Sugar >120 mg/dL (1=True, 0=False)', placeholder='Normal: <100 mg/dL')
 
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
-
+        restecg = st.text_input('Resting ECG Results (0–2)', placeholder='0: Normal, 1–2: Abnormalities')
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved')
-
+        thalach = st.text_input('Max Heart Rate Achieved (bpm)', placeholder='Normal: 120–200 bpm')
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        exang = st.text_input('Exercise Induced Angina (1=Yes, 0=No)', placeholder='Normal: 0 (No)')
 
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise')
-
+        oldpeak = st.text_input('ST Depression by Exercise', placeholder='Normal: 0.0–2.0')
     with col2:
-        slope = st.text_input('Slope of the peak exercise ST segment')
-
+        slope = st.text_input('Slope of Peak Exercise ST (0–2)', placeholder='0: Upsloping, 2: Downsloping')
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
+        ca = st.text_input('Major Vessels Colored by Fluoroscopy (0–3)', placeholder='Normal: 0–1')
 
     with col1:
-        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+        thal = st.text_input('Thalassemia (0=Normal, 1=Fixed Defect, 2=Reversible)', placeholder='0 preferred')
+
 
     # code for Prediction
     heart_diagnosis = ''
@@ -248,6 +241,7 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+
 
 
 
