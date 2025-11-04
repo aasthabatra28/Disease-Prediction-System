@@ -124,7 +124,7 @@ if selected == 'Heart Disease Prediction':
         ca = st.text_input('Major Vessels Colored by Fluoroscopy (0–3)', placeholder='Normal: 0–1')
 
     with col1:
-        thal = st.text_input('Thalassemia (0=Normal, 1=Fixed Defect, 2=Reversible)', placeholder='0 preferred')
+        thal = st.text_input('Thalassemia (0=Normal, 1=Fixed Defect, 2=Reversible)')
 
 
     # code for Prediction
@@ -241,6 +241,7 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+
 
 
 
