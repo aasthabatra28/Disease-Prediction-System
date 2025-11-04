@@ -43,6 +43,7 @@ if selected == 'Diabetes Prediction':
 
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
+       st.caption("🔹 Normal: 0–10 times")
 
     with col2:
         Glucose = st.text_input('Glucose Level')
@@ -248,3 +249,4 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+
